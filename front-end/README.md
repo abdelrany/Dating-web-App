@@ -1,4 +1,6 @@
-# Description: A dating web app building : Client side build in Nextjs , Typescript , Tailwindcss
+# Description:
+
+- A dating web app. The client side built in Nextjs , Typescript , Tailwindcss.
 
 ## Getting Started
 
