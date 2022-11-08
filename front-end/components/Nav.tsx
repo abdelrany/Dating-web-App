@@ -7,9 +7,9 @@ const Nav = () => {
 
     if (isLoggedIn) {
       return <header>
-          <nav className='bg-white flex justify-between items-center h-12md:px-12 lg:px-32'>
+          <nav className='bg-white flex justify-between items-center h-12  px-2 sm:px-8 lg:px-32'>
               {/* logo to be added later as an SVG or PNG */}
-              <h1 className="font-extrabold text-3xl text-primary mr-4">DatingApp</h1>
+              <h1 className="font-extrabold text-2xl text-primary mr-4">DatingApp</h1>
               <ul className="flex items-center flex-1 gap-4 ml-8 text-dark">
                 <li className="cursor-pointer hover:text-primary hover:translate-y-[-4px] transition-all duration-300">Matches</li>
                 <li className="cursor-pointer hover:text-primary hover:translate-y-[-4px] transition-all duration-300">Dates</li>
@@ -25,12 +25,12 @@ const Nav = () => {
         </header>
     }
   if(!isLoggedIn) return <header className='bg-dark '>
-                            <nav className='flex justify-between items-center h-12 md:px-32'>
+                            <nav className='flex justify-between items-center h-12 px-2 sm:px-8 lg:px-32'>
                               {/* logo to be added later as an SVG or PNG */}
-                              <h1 className="font-extrabold text-3xl text-primary mr-4">DatingApp</h1>
-                              <div className='flex items-center gap-2'>
-                                <p className='text-gray-200'>Already a member ? </p>
-                                <button className='btn-accent font-bold tracking-widest'>Login</button>
+                              <h1 className="font-extrabold text-2xl text-primary md:mr-4">DatingApp</h1>
+                              <div className='flex items-center gap-1 md:gap-2'>
+                                <p className='text-gray-200 text-sm'>Already a member ? </p>
+                                <button className='btn-accent text-sm tracking-widest'>Login</button>
                               </div>
                             </nav>
                          </header>
