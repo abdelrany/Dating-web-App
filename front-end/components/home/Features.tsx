@@ -33,19 +33,19 @@ const Features = (props: Props) => {
 
             <div className='flex items-center justify-between py-8'>
                 <div className='flex flex-col items-center gap-2'>
-                    <Image src={signupSvg} alt="sign up" className="w-52 h-52"/>
+                    <Image src={signupSvg} alt="sign up" className="w-52 h-52 hover:scale-110 duration-500"/>
                     <h1 className='text-center font-bold text-xl tracking-wide'>Sign up and Get Started</h1>
                     <p className='text-sm text-center'>Now with instantly generated matches based <br/>  on your behavior, likes, patterns, psyche.</p>
                 </div>
                 <div className='flex flex-col items-center gap-2'>
-                    <Image src={chattingSvg} alt="sign up" className="w-52 h-52"/>
-                    <h1 className='text-center font-bold text-xl tracking-wide'>Sign up and Get Started</h1>
-                    <p className='text-sm text-center'>Now with instantly generated matches based <br/>  on your behavior, likes, patterns, psyche.</p>
+                    <Image src={chattingSvg} alt="sign up" className="w-52 h-52 hover:scale-110 duration-500"/>
+                    <h1 className='text-center font-bold text-xl tracking-wide'>Unlock "Ready to Chat" </h1>
+                    <p className='text-sm text-center'>Unlock "Ready to Chat" status with partner <br/>  and chat without any limits.</p>
                 </div>
                 <div className='flex flex-col items-center gap-2'>
-                    <Image src={datingSvg} alt="sign up" className="w-52 h-52"/>
-                    <h1 className='text-center font-bold text-xl tracking-wide'>Sign up and Get Started</h1>
-                    <p className='text-sm text-center'>Now with instantly generated matches based <br/>  on your behavior, likes, patterns, psyche.</p>
+                    <Image src={datingSvg} alt="sign up" className="w-52 h-52 hover:scale-110 duration-500"/>
+                    <h1 className='text-center font-bold text-xl tracking-wide'>Invite your match to date</h1>
+                    <p className='text-sm text-center'> Afer certain relationsis built up, you're "ready to date" <br/>  and can invite your match to date right from the app</p>
                 </div>
             </div>
         </div>
