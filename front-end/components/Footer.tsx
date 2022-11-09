@@ -2,7 +2,6 @@ import { DevicePhoneMobileIcon } from '@heroicons/react/24/outline';
 import React from 'react'
 
 type Props = {}
-
 const Footer = (props: Props) => {
   return (
     <footer className='px-2 md:px-12 lg:px-32 bg-[#333333] py-8'>
