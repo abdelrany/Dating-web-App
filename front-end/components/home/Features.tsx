@@ -52,7 +52,7 @@ const Features = (props: Props) => {
 
         {/* The illustration of Matchmaking  */}
         <div className='py-12 px-2 sm:px-8 lg:px-32 flex justify-between flex-col gap-4 md:flex-row items-center bg-dark'>
-            <article className='flex-[.4]'>
+            <article className='flex-[.5]'>
                 <h1 className='text-gray-100 text-center md:text-left text-2xl font-extrabold mb-4 tracking-wide'>
                     An Intelligent Matchmaking
                 </h1>
@@ -67,10 +67,10 @@ const Features = (props: Props) => {
                     on your clicks.
                 </p>
             </article>
-            <div className='flex-[.5] flex justify-between items-center gap-4'>
+            <div className='flex-[.5] flex justify-between items-center gap-2'>
                     <div className=''>
                         <div className="loader-cirle loader-cirle-one group flex justify-center items-center">
-                            <CursorArrowRaysIcon className='h-8 w-8 text-gray-200 group-hover:animate-pulse group-hover:scale-150 duration-300'/>
+                            <CursorArrowRaysIcon className='h-6 w-6 md:h-8 md:w-8 -rotate-45 text-gray-200 group-hover:animate-pulse group-hover:scale-150 duration-300'/>
                         </div>
                         <h1 className='text-center text-gray-100 mt-4 tracking-wide'>You Click</h1> 
                     </div>
@@ -93,7 +93,7 @@ const Features = (props: Props) => {
 
         {/* the last part of the fetaures section with a gradient bg */}
         <div className='bg-gradient py-4 px-2 sm:px-8 lg:px-32 flex flex-col md:flex-row items-center justify-between '>
-            <article className='md:flex-[.6]'>
+            <article className='lg:flex-[.8]'>
                 <h1 className='text-gray-100 text-center md:text-left text-2xl font-extrabold mb-4 tracking-wide'>Don't Wait, Start Rigt Now</h1>
                 <p className='text-gray-100  text-center md:text-left'>
                     What are you waiting for ? With clickdate, Ther's no reason why you shouldn't find your perfect match, we are an
