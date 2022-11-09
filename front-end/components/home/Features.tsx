@@ -14,8 +14,8 @@ const Features = (props: Props) => {
     <div className=' min-h-[80vh]'>
         {/* download app section */}
         <div className='bg-gradient py-2 px-2 sm:px-8 lg:px-32 lg:py-4 flex flex-col-reverse md:flex-row md:items-start justify-between items-center'>
-            <div className='flex flex-col items-center '>
-                <h1 className='mb-2 text-2xl font-extrabold text-gray-100 tracking-widest text-center '>Get ClickDate on Your Phone</h1>
+            <div className='flex flex-col items-center md:items-start'>
+                <h1 className='mb-2 text-2xl font-extrabold text-gray-100 tracking-widest text-center'>Get ClickDate on Your Phone</h1>
                 <p className='mb-2 text-gray-100 tracking-normal text-center'>Interact with partners whenever you want from yur mobile phone.</p>
                 <p className=' mb-2 text-gray-100 tracking-normal text-center'>The more you use the app, the more you are close to a real date.</p>
                 <div className='hover:-translate-y-2 group cursor-pointer duration-300 w-52 flex items-center  justify-between p-2 px-4 bg-black rounded-lg text-gray-100'>
