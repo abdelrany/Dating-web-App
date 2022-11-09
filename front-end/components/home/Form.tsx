@@ -9,25 +9,25 @@ const Form = (props: Props) => {
        <div className='flex justify-between items-center'>
             <div className='flex-[.47]'>
                 <h2 className='font-bold text-gray-600 mb-4'>I am a :</h2>
-                <div className='group mb-2 hover:bg-accent border  border-accent flex items-center justify-around rounded-lg  gap-4 p-2 w-full'>
+                <label htmlFor="radio-man"  className=' cursor-pointer group mb-2 hover:bg-accent border  border-accent flex items-center justify-around rounded-lg  gap-4 p-2 w-full'>
                     <input  type="radio" value="" name="gender-1" id="radio-man" className='bg-primary h-6 w-6 cursor-pointer' />
-                    <label htmlFor="radio-man" className='group-hover:text-gray-100 cursor-pointer text-gray-600'>Man</label>
-                </div>
-                <div className='group hover:bg-accent border border-accent flex items-center justify-around rounded-lg  gap-4 p-2 w-full'>
+                    <p className='group-hover:text-gray-100 cursor-pointer text-gray-600'>Man</p>
+                </label>
+                <label htmlFor="radio-woman" className='cursor-pointer  group hover:bg-accent border border-accent flex items-center justify-around rounded-lg  gap-4 p-2 w-full'>
                     <input  type="radio" value="" name="gender-1" id="radio-woman" className='bg-primary h-6 w-6 cursor-pointer' />
-                    <label htmlFor="radio-woman" className='group-hover:text-gray-100 cursor-pointer text-gray-600'>Woman</label>
-                </div>
+                    <p className='group-hover:text-gray-100 cursor-pointer text-gray-600'>Woman</p>
+                </label>
             </div>
             <div className='flex-[.47]'>
                 <h2 className='font-bold text-gray-600 mb-4'>I am looking for a :</h2>
-                <div className='group mb-2 hover:bg-accent border border-accent flex items-center justify-around rounded-lg  gap-4 p-2 w-full'>
+                <label htmlFor="radio-man-2" className='cursor-pointer  group mb-2 hover:bg-accent border border-accent flex items-center justify-around rounded-lg  gap-4 p-2 w-full'>
                     <input  type="radio" value="" name="gender-2" id="radio-man-2" className='bg-primary h-6 w-6 cursor-pointer' />
-                    <label htmlFor="radio-man-2" className='group-hover:text-gray-100 cursor-pointer text-gray-600'>Man</label>
-                </div>
-                <div className='group hover:bg-accent border border-accent flex items-center justify-around rounded-lg gap-4 p-2 w-full'>
+                    <p className='group-hover:text-gray-100 cursor-pointer text-gray-600'>Man</p>
+                </label>
+                <label htmlFor="radio-woman-2" className=' cursor-pointer  group hover:bg-accent border border-accent flex items-center justify-around rounded-lg gap-4 p-2 w-full'>
                     <input  type="radio" value="" name="gender-2" id="radio-woman-2" className='bg-primary h-6 w-6 cursor-pointer' />
-                    <label htmlFor="radio-woman-2" className='group-hover:text-gray-100 cursor-pointer text-gray-600'>Woman</label>
-                </div>
+                    <p className='group-hover:text-gray-100 cursor-pointer text-gray-600'>Woman</p>
+                </label>
             </div>
        </div> 
        <label className='border border-accent rounded-md relative gap-2'>
