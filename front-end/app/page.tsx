@@ -7,7 +7,7 @@ type Props = {}
 const HomePage = (props: Props) => {
   const isLoggedIn = true;
   return (
-    <div className='min-h-screen'>
+    <div className='h-screen'>
       {
         isLoggedIn ? <LoggedinHome />
                    : <UnloggedHome />
