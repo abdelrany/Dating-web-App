@@ -7,11 +7,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
+    <html className="">
       <head>
         <title>DatingApp | Find Your Dream Partner Online</title>
       </head>
-      <body>
+      <body className="scroll-smooth">
         <Nav/>
         {children}
         <Footer/>
