@@ -8,8 +8,8 @@ const Footer = (props: Props) => {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-12 text-gray-400'>
 
           <div className=''>
-            <h1 className='font-bold text-lg tracking-wide mb-8 text-white'>Clickdate dating</h1>
-            <div className='flex justify-between'>
+            <h1 className='font-bold text-lg tracking-wide mb-8 text-white text-center md:text-left'>Clickdate dating</h1>
+            <div className='flex justify-around md:justify-between'>
               <ul className='flex flex-col gap-2 tracking-wide text-sm'>
                 <li className="hover:text-white duration-300  cursor-pointer">Single Dating</li>
                 <li className="hover:text-white duration-300  cursor-pointer">India Dating</li>
@@ -26,8 +26,8 @@ const Footer = (props: Props) => {
           </div>
 
           <div className=''>
-            <h1 className='font-bold text-lg tracking-wide mb-8 text-white'>Clickdate dating</h1>
-            <div className='flex justify-between'>
+            <h1 className='font-bold text-lg tracking-wide mb-8 text-white text-center md:text-left'>Clickdate dating</h1>
+            <div className='flex justify-around md:justify-between'>
               <ul className='flex flex-col gap-2 tracking-wide  text-sm'>
                 <li className="hover:text-white duration-300  cursor-pointer">Single Dating</li>
                 <li className="hover:text-white duration-300  cursor-pointer">India Dating</li>
@@ -43,8 +43,8 @@ const Footer = (props: Props) => {
           </div>
           </div>
           <div className=''>
-            <h1 className='font-bold text-lg tracking-wide mb-8 text-white'>Clickdate dating</h1>
-            <div className='flex justify-between'>
+            <h1 className='font-bold text-lg tracking-wide mb-8 text-white text-center md:text-left'>Clickdate dating</h1>
+            <div className='flex justify-around md:justify-between'>
               <ul className='flex flex-col gap-2 tracking-wide  text-sm'>
                 <li className="hover:text-white duration-300  cursor-pointer">Single Dating</li>
                 <li className="hover:text-white duration-300  cursor-pointer">India Dating</li>
@@ -60,8 +60,8 @@ const Footer = (props: Props) => {
           </div>
           </div>
           <div className=''>
-            <h1 className='font-bold text-lg tracking-wide mb-8 text-white'>Clickdate dating</h1>
-            <div className='flex justify-between'>
+            <h1 className='font-bold text-lg tracking-wide mb-8 text-white text-center md:text-left'>Clickdate dating</h1>
+            <div className='flex justify-around md:justify-between'>
               <ul className='flex flex-col gap-2 tracking-wide  text-sm'>
                 <li className="hover:text-white duration-300  cursor-pointer">Single Dating</li>
                 <li className="hover:text-white duration-300  cursor-pointer">India Dating</li>
