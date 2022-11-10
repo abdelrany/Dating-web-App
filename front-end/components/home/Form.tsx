@@ -36,7 +36,7 @@ const Form = (props: Props) => {
        </label>
        <label className='border border-accent rounded-md relative gap-2'>
             <EnvelopeIcon className='h-6 w-6 text-accent absolute top-2 left-2'/>
-            <input type="text"  className='bg-transparent  w-full h-full pl-10 p-2 rounded-md placeholder:italic placeholder:text-slate-400 ' placeholder="First and Last Names"/>
+            <input type="text"  className='bg-transparent  w-full h-full pl-10 p-2 rounded-md placeholder:italic placeholder:text-slate-400 ' placeholder="Your Email"/>
        </label>
        <label className='border border-accent rounded-md relative gap-2'>
             <UserIcon className='h-6 w-6 text-accent absolute top-2 left-2'/>
