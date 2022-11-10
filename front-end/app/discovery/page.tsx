@@ -1,10 +1,19 @@
 import React from 'react'
+import SharedPageNav from '../../components/SharedPageNav'
 
-type Props = {}
+import { ArchiveBoxIcon, BellAlertIcon, InboxArrowDownIcon } from '@heroicons/react/24/outline'
+
+const sharednavLinks = [
+  {title:'Inbox', icon: <InboxArrowDownIcon  className='h-5 w-5'/>},
+  {title:'Archive', icon: <ArchiveBoxIcon className='h-5 w-5'/>},
+  {title:'Notifications', icon: <BellAlertIcon className='h-5 w-5'/>},
+]
 
 const discovery = (props: Props) => {
   return (
-    <div>discovery</div>
+    <div className='min-h-screen shadow'>
+        <SharedPageNav sharednavLinks={sharednavLinks}/>
+    </div>
   )
 }
 
