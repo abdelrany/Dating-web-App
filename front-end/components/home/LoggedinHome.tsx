@@ -1,21 +1,20 @@
+import { UserGroupIcon, StarIcon, HandThumbUpIcon, EyeSlashIcon, HeartIcon } from '@heroicons/react/24/outline'
 import React from 'react'
+import SharedPageNav from '../SharedPageNav'
 
-type Props = {}
+
+const sharednavLinks = [
+  {title:'My matches', icon: <HeartIcon className='h-5 w-5'/>},
+  {title:'Favorites', icon: <StarIcon className='h-5 w-5'/>},
+  {title:'Visitors', icon: <UserGroupIcon className='h-5 w-5'/>},
+  {title:'Likes', icon: <HandThumbUpIcon className='h-5 w-5'/>},
+  {title:'Hidden matches', icon: <EyeSlashIcon className='h-5 w-5'/>},
+]
 
 const LoggedinHome = (props: Props) => {
   return (
     <section className=''>
-        <div className="absolute top-12 left-0 w-screen text-dark bg-gradient  px-2 sm:px-8 lg:px-32">
-            <ul className='flex items-center gap-16 text-gray-200 h-12'>
-                <li className="">My Matches</li>
-                <li className="">Favorites</li>
-                <li className="">Visitors</li>
-                <li className="">Likes</li>
-                <li className="">Hidden Matches</li>
-            </ul>
-            
-       </div>
-
+      <SharedPageNav sharednavLinks={sharednavLinks}/>
     </section>
   )
 }
