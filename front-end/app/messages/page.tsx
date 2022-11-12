@@ -1,5 +1,5 @@
 "use client"
-import { ArchiveBoxIcon, ArrowUturnLeftIcon, BellAlertIcon, InboxArrowDownIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline'
+import { ArchiveBoxIcon, ArrowUturnLeftIcon, BellAlertIcon, InboxArrowDownIcon, MagnifyingGlassIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { NextPage } from 'next'
 import React, { FC, useState } from 'react'
 import BoxHeader from '../../components/messages/BoxHeader'
@@ -51,14 +51,12 @@ const Messages:NextPage = (props: Props) => {
                  </div>
             </div>
             {/* goBack icon is shown ony in mobile version and when there is a chat selected */}
-            <ArrowUturnLeftIcon  onClick={()=> setChatBox(null)}
-                  className={`${!ChatBox && "hidden"} cursor-pointer w-6 h-6 text-primary absolute md:hidden top-6 left-2`}
-              />
+            <div onClick={()=> setChatBox(null)} className={`${!ChatBox && "hidden"} bg-red-500 w-10 h-10 rounded-full absolute md:hidden top-0 left-[50%] cursor-pointer flex items-center justify-center`}>
+                <XMarkIcon className="w-5 h-5 text-white "/>
+            </div>
               {/* this is where the chats will happen, and it display only whe a chat is selected */}
-            <div className={` ${ChatBox ? "flex " : "hidden"}  h-full overflow-hidden shadow-md md:col-span-2  flex-col items-stretch justify-between`}>
-                  
+            <div className={` ${ChatBox ? "flex  " : "hidden h-0"} h-full transition-all duratin-500 origin-bottom  overflow-hidden shadow-md md:col-span-2  flex-col items-stretch justify-between`}>
                  {ChatBox &&  <BoxHeader id={ChatBox!.id || 0}  name={ChatBox!.name || "no user"} /> }
-
                   <MsgInputBox/>
             </div>
             {/* we render this message when there is not chat selected */}

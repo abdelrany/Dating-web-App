@@ -6,17 +6,16 @@ type Props = {}
 
 const MsgInputBox = (props: Props) => {
   return (
-        <form className='w-full h-32 p-2 relative'>
-            <textarea className='border-2 pb-12 max-h-28 border-accent bg-white px-4 py-2 w-full h-full rounded-lg resize-none'  placeholder='Type your message here'/>
+        <form className='w-full h-32 p-2 bg-gray-100'>
+            <textarea className='outline-none border-none tracking-widest px-4 py-2 w-full h-[75%] rounded-lg resize-none'  placeholder='Type your message here'/>
             
-            <div className='absolute bottom-1 left-2 right-2 px-4 pb-4 w-[100%] h-8 flex justify-between items-center'>
-              <div className='flex gap-4 items-center'>
-                    <FaceSmileIcon className='cursor-pointer h-6 w-6 text-dark duration-300'/>
-                    <PaperClipIcon className='-rotate-45 cursor-pointer h-6 w-6 text-dark duration-300'/>
-                    <FireIcon className='cursor-pointer h-6 w-6 text-dark duration-300'/>
+            <div className='px-2  w-full flex justify-between items-center'>
+              <div className='flex justify-between items-center w-24'>
+                    <FaceSmileIcon className='cursor-pointer h-5 w-5 text-dark duration-300 hover:scale-110'/>
+                    <PaperClipIcon className='-rotate-45 cursor-pointer h-5 w-5 text-dark duration-300 hover:scale-110'/>
+                    <FireIcon className='cursor-pointer h-5 w-5 text-dark duration-300 hover:scale-110'/>
               </div>
-
-              <PaperAirplaneIcon className='text-secondary cursor-pointer h-8 w-8 duration-300 mr-4 mb-2'/>
+              <PaperAirplaneIcon className='text-secondary cursor-pointer h-5 w-5 duration-300 hover:scale-110'/>
             </div>
 
         </form>
