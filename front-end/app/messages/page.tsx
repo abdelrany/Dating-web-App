@@ -62,7 +62,7 @@ const Messages:NextPage = (props: Props) => {
                   <MsgInputBox/>
             </div>
             {/* we render this message when there is not chat selected */}
-            <h1 className={`${ChatBox && "hidden"} text-primary text-2xl font-bold absolute bottom-[50%] left-[50%] text-center`}>
+            <h1 className={`${ChatBox && "hidden"} opacity-0 md:opacity-100 text-primary text-2xl font-bold absolute bottom-[50%] left-[50%] text-center`}>
                   Please select a person to talk to
             </h1>
       </div>
