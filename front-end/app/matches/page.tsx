@@ -29,7 +29,7 @@ const Matches = () => {
          <Card/>
          <Card/>
       </main>
-      <button className='mx-auto bg-gray-300 text-secondary tracking-wide my-4 px-4 py-2 rounded-md cursor-pointer'>Load More</button>
+      <button className='mx-auto border border-gray-300 text-secondary tracking-wide my-4 px-4 py-2 rounded-md cursor-pointer'>Load More</button>
     </div>
   )
 }
