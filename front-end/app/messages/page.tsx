@@ -26,7 +26,7 @@ const Messages:NextPage = (props: Props) => {
     <section className='px-2 lg:px-32 pt-16 h-screen w-full bg-gray-200'>
       <SharedPageNav sharednavLinks={sharednavLinks}/>
 
-      <div className='w-full h-[90vh] relative bg-white rounded-lg overflow-hidden border shadow md:grid md:grid-cols-3'>
+      <div className='w-full h-[89vh] relative bg-white rounded-lg overflow-hidden border shadow md:grid md:grid-cols-3'>
              <div className={`${ChatBox && "hidden md:block"} col-span-1 relative pt-20 overflow-hidden h-full border-r-2`}>
                  <div className=' flex items-center pl-6 pr-2 absolute bg-gray-100 top-0 right-0 left-0 h-20 border-b-2'>
                     <MagnifyingGlassIcon className='w-6 h-6 -mr-8 z-10 text-primary'/>    
@@ -34,7 +34,7 @@ const Messages:NextPage = (props: Props) => {
                           className='bg-white w-full h-10 rounded-lg pl-10'
                     />
                  </div>
-                 <div className='overflow-scroll h-full' onClick={()=>setChatBox({id:2, name:"Chris Molaga"})}>
+                 <div className='overflow-scroll h-full' onClick={()=>setChatBox({id:1, name:"Xavier Hernandez  "})}>
                    {/* here we should render the list of recent chats */}
                     <ContactItem/>
                     <ContactItem/>
