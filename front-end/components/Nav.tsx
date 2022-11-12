@@ -4,8 +4,6 @@ import profileImg from '../assets/images/profile.png'
 import {ChevronDownIcon, XMarkIcon} from '@heroicons/react/24/outline'
 import Link from 'next/link';
 import { useState } from 'react';
-import { useRouter } from 'next/router';
-import { JsxElement } from 'typescript';
 
 // List of links will be rendered in nav element
 const navLinks = ['Matches', 'Dates', 'Messages', 'Discovery'];
