@@ -39,7 +39,7 @@ const Nav = ():any => {
                     </div>
 
                     {/* (nav 2) when it hits the phone breakpoints, this menue will be on, and the one above (nav 1) will be off */}
-                    <div className={`sm:hidden ${isOpen ? "visible":"invisible" } fixed z-10 top-0 right-0 w-screen h-screen`}>
+                    <div className={`sm:hidden ${isOpen ? "visible":"invisible" } fixed z-50 top-0 right-0 w-screen h-screen`}>
                       <XMarkIcon onClick={()=>setIsOpen(false)} className='fixed top-3 right-2 cursor-pointer h-8 w-8 text-primary'/>
                       <ul className={`${isOpen ? "h-full":"h-0"} transition-all duration-500 flex w-screen flex-col items-center justify-center gap-12 bg-gray-200 overflow-hidden `}>
                         {navLinks.map((L, I) => <Link href={`/${L.toLocaleLowerCase()}`} onClick={()=>setIsOpen(false)} key={I}> 
@@ -51,7 +51,7 @@ const Nav = ():any => {
                       </ul>
                     </div>
                     {/* account setting links available only in the SM breakpoint */}
-                    <ul onMouseLeave={()=>setIsOpen(false)} className={`hidden sm:flex overflow-hidden w-40 ${ isOpen? "h-48 " : "h-0" } bg-white shadow-md duration-500 transition-all flex-col items-center justify-around rounded-b-md top-12 right-8 lg:right-32 absolute z-10 `}>
+                    <ul onMouseLeave={()=>setIsOpen(false)} className={`hidden sm:flex overflow-hidden w-40 ${ isOpen? "h-48 " : "h-0" } bg-white shadow-md duration-500 transition-all flex-col items-center justify-around rounded-b-md top-12 right-8 lg:right-32 absolute z-50 `}>
                         <Link href="/account"> <li className="hover:text-primary duration-300 cursor-pointer text-dark text-xl font-bold tracking-widest">Account</li></Link>
                         <Link href="/account"> <li className="hover:text-primary duration-300 cursor-pointer text-dark text-xl font-bold tracking-widest">Insights</li></Link>
                         <button onClick={()=>setIsOpen(false)} className='bg-secondary px-6 py-2 rounded-md text-gray-100 text-lg duration-300 hover:bg-red-500 hover:text-white'>Log Out</button>
