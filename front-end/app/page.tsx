@@ -7,12 +7,11 @@ import Form from '../components/home/Form'
 import homeImg from '../assets/images/home.jpeg'
 import privacyImg from '../assets/images/privacy.png'
 import secureImg from '../assets/images/securee.png'
-import datenewsLogo from '../assets/images/datingnews.png'
-import dateadviceLogo from '../assets/images/datingadvice.png'
 import Features from '../components/home/Features'
 import DateAdviceSection from '../components/home/DateAdviceSection'
 
 import "../styles/globals.css"
+import HomeFooter from '../components/home/HomeFooter'
 
 type Props = {}
 
@@ -58,13 +57,7 @@ const HomePage = (props: Props) => {
            </div>
            <Features/>
            <DateAdviceSection />
-           <div className='bg-white py-12 px-2 sm:px-8 lg:px-32 '>
-               <h1 className='text-dark text-3xl font-extrabold text-center mb-12'>Featured on </h1>
-               <div className='flex justify-center gap-24 items-center'>
-                   <Image src={datenewsLogo} alt="Dating news" className='w-24 h-16 md:w-32 md:h-24'/>
-                   <Image src={dateadviceLogo} alt="dating advice" className='w-24 h-16 md:w-32 md:h-24'/>
-               </div>
-           </div>
+           <HomeFooter />
        </section>
   )
 }

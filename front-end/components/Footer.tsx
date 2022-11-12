@@ -4,79 +4,7 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <footer className='px-2 md:px-12 lg:px-32 bg-[#333333] py-8'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-12 text-gray-400'>
-
-          <div className=''>
-            <h1 className='font-bold text-lg tracking-wide mb-8 text-white text-center md:text-left'>Clickdate dating</h1>
-            <div className='flex justify-around md:justify-between'>
-              <ul className='flex flex-col gap-2 tracking-wide text-sm'>
-                <li className="hover:text-white duration-300  cursor-pointer">Single Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">India Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">African Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">Asian Dating</li>
-              </ul>
-              <ul className='flex flex-col gap-2 tracking-wide  text-sm'>
-                <li className="hover:text-white duration-300  cursor-pointer">Black Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">Blonde Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">American Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">European Dating</li>
-              </ul>
-          </div>
-          </div>
-
-          <div className=''>
-            <h1 className='font-bold text-lg tracking-wide mb-8 text-white text-center md:text-left'>Clickdate dating</h1>
-            <div className='flex justify-around md:justify-between'>
-              <ul className='flex flex-col gap-2 tracking-wide  text-sm'>
-                <li className="hover:text-white duration-300  cursor-pointer">Single Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">India Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">African Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">Asian Dating</li>
-              </ul>
-              <ul className='flex flex-col gap-2 tracking-wide  text-sm'>
-                <li className="hover:text-white duration-300  cursor-pointer">Black Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">Blonde Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">American Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">European Dating</li>
-              </ul>
-          </div>
-          </div>
-          <div className=''>
-            <h1 className='font-bold text-lg tracking-wide mb-8 text-white text-center md:text-left'>Clickdate dating</h1>
-            <div className='flex justify-around md:justify-between'>
-              <ul className='flex flex-col gap-2 tracking-wide  text-sm'>
-                <li className="hover:text-white duration-300  cursor-pointer">Single Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">India Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">African Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">Asian Dating</li>
-              </ul>
-              <ul className='flex flex-col gap-2 tracking-wide  text-sm'>
-                <li className="hover:text-white duration-300  cursor-pointer">Black Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">Blonde Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">American Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">European Dating</li>
-              </ul>
-          </div>
-          </div>
-          <div className=''>
-            <h1 className='font-bold text-lg tracking-wide mb-8 text-white text-center md:text-left'>Clickdate dating</h1>
-            <div className='flex justify-around md:justify-between'>
-              <ul className='flex flex-col gap-2 tracking-wide  text-sm'>
-                <li className="hover:text-white duration-300  cursor-pointer">Single Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">India Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">African Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">Asian Dating</li>
-              </ul>
-              <ul className='flex flex-col gap-2 tracking-wide  text-sm'>
-                <li className="hover:text-white duration-300  cursor-pointer">Black Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">Blonde Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">American Dating</li>
-                <li className="hover:text-white duration-300  cursor-pointer">European Dating</li>
-              </ul>
-          </div>
-          </div>
-        </div>
+    <footer className='px-2 md:px-12 lg:px-32 bg-[#333333] py-4'>
         <div className='mt-8 flex items-center flex-col sm:flex-row justify-between gap-4'>
                 <div className='flex gap-4 items-center'>
                   {/* instagram SVG */}
@@ -99,7 +27,7 @@ const Footer = (props: Props) => {
                         <p className='text-sm font-bold'>App Store</p>
                     </span>
                 </div>
-          </div>
+        </div>
         <div className='flex flex-col gap-8 md:flex-row justify-between items-center pt-8 pb-2'>
             <ul className='flex items-center gap-4 md:gap-12 text-gray-400  text-sm'>
               <li className='hover:text-white duration-300 cursor-pointer'>About us</li>
