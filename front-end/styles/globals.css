@@ -50,14 +50,12 @@ body::-webkit-scrollbar,
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-/* animated circles */
+/*  circles */
 .loader-cirle {
   border: 16px solid #356c91;
   border-radius: 50%;
-  /* border-color: linear-gradient(#f856a6, #6b81f9); */
   width: 110px;
   height: 110px;
-  /* animation: spin 2s linear infinite; */
   position: relative;
 }
 .loader-cirle-one {
