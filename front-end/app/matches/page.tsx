@@ -27,7 +27,7 @@ const Matches = () => {
          <Card id={351}/>
          <Card id={344}/>
          <Card id={377}/>
-         <Card id={334}/>
+         <Card id={330}/>
          <Card id={443}/>
       </main>
       <button className='mx-auto border border-gray-300 text-secondary tracking-wide my-4 px-4 py-2 rounded-md cursor-pointer'>Load More</button>
