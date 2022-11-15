@@ -7,6 +7,7 @@ import { useState } from 'react';
 // List of links will be rendered in nav element
 const navLinks = ['Matches', 'Dates', 'Messages', 'Discovery'];
 
+// tsx
 const Nav = ():any => {
   const isLoggedIn = true;
   const [isOpen, setIsOpen] = useState(false)
