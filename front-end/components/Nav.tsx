@@ -1,6 +1,5 @@
 "use client"
 import Image from 'next/image';
-import profileImg from '../assets/images/profile.png'
 import {ChevronDownIcon, XMarkIcon} from '@heroicons/react/24/outline'
 import Link from 'next/link';
 import { useState } from 'react';
@@ -29,7 +28,9 @@ const Nav = ():any => {
 
                     {/*(profile) responsible for showing the links */}
                     <div className="flex items-center gap-2">
-                        <Image src={profileImg} className="w-10 h-10 rounded-full" alt="profile name"/>
+                        <Image src={`https://picsum.photos/id/64/300/300`}
+                           width={300} height={400} alt="clickdate" className='w-10 h-10 rounded-full'/>
+
                         <p onClick={()=>setIsOpen(!isOpen)}  className="cursor-pointer text-dark hover:text-primary duration-300 text-sm md:text-lg">{"Kouhadi Bryan".substring(0,15)}</p>
                         {!isOpen ? <ChevronDownIcon onClick={()=>setIsOpen(true)} className="cursor-pointer h-5 w-5 lg:h-6 lg:w-6 text-primary"/>
                                  : <XMarkIcon onClick={()=>setIsOpen(false)} className='cursor-pointer h-5 w-5 lg:h-6 lg:w-6 text-primary'/>
