@@ -1,13 +1,11 @@
-import React from 'react'
 
-
-
-const discovery = () => {
+const Discovery= async() => {
+    
   return (
     <div className='min-h-screen shadow'>
-        dicovery
+      discovery
     </div>
   )
 }
 
-export default discovery
+export default Discovery
