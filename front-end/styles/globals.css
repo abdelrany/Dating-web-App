@@ -69,3 +69,41 @@ body::-webkit-scrollbar,
   border: 16px solid #f856a6;
   transition: all 300ms linear;
 }
+
+/* Loading animation for the custom loading page */
+
+.loading {
+  background-color: rgb(88, 60, 65);
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+.loading-1 {
+  animation: bounce 1s infinite;
+}
+.loading-2 {
+  animation: bounce 1s infinite 200ms;
+}
+.loading-3 {
+  animation: bounce 1s infinite 400ms;
+}
+.loading-4 {
+  animation: bounce 1s infinite 600ms;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0, 0, 0);
+  }
+
+  50% {
+    transform: translateY(-200px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0, 0, 0.3);
+  }
+
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0, 0, 0);
+  }
+}

@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
 import {ChatBubbleOvalLeftIcon, HeartIcon, UserPlusIcon } from '@heroicons/react/24/outline'
 import Form from '../components/home/Form'
@@ -9,25 +9,28 @@ import privacyImg from '../assets/images/privacy.png'
 import secureImg from '../assets/images/securee.png'
 import Features from '../components/home/Features'
 import DateAdviceSection from '../components/home/DateAdviceSection'
-
 import "../styles/globals.css"
 import HomeFooter from '../components/home/HomeFooter'
 
-type Props = {}
+// // fonts
+// import { Inter } from '@next/font/google';
+// const inter = Inter({
+//     variable: '--font-inter',
+//   });
 
-const HomePage = (props: Props) => {
+
+const HomePage = () => {
     const isLoggedIn = true;
+    const router = useRouter();
 
-    
-    const route = useRouter();
     useEffect(()=>{
-      // we need to push to /matches if the user is logged in
-      // if(isLoggedIn) route.push("/");
+      // we need to route the user straight to /matches if she/he is logged in
+      if(isLoggedIn) router.push("/matches");
     })
   return (
-      <section className=''>
-          <Image src={homeImg} alt="dating app home page" className="absolute top-0 left-0 w-screen h-screen z-[-1]" />
-          <div className='py-8  px-2 sm:px-8 lg:px-32 mb-12 min-h-[75vh] '>
+      <main>
+          <Image src={homeImg} alt="dating app home page" className="absolute top-0 left-0 w-screen h-screen -z-20" />
+          <div className='py-8 px-2 sm:px-8 lg:px-32 mb-12 min-h-[75vh]'>
               <h1 className='font-extrabold text-4xl text-center text-gray-100 w-[350px] mb-4'>Find Real Love in Real Time at a Click</h1>
               <Form/>
               <div className='hidden absolute bottom-44 right-32 lg:flex items-center rounded-md bg-gray-100 w-90 h-16'>
@@ -58,7 +61,7 @@ const HomePage = (props: Props) => {
            <Features/>
            <DateAdviceSection />
            <HomeFooter />
-       </section>
+       </main>
   )
 }
 export default HomePage;

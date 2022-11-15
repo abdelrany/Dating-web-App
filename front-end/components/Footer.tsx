@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 type Props = {}
@@ -29,11 +30,11 @@ const Footer = (props: Props) => {
                 </div>
         </div>
         <div className='flex flex-col gap-8 md:flex-row justify-between items-center pt-8 pb-2'>
-            <ul className='flex items-center gap-4 md:gap-12 text-gray-400  text-sm'>
-              <li className='hover:text-white duration-300 cursor-pointer'>About us</li>
-              <li className='hover:text-white duration-300 cursor-pointer'>Help & Feedback</li>
-              <li className='hover:text-white duration-300 cursor-pointer'>Privacy & Terms</li>
-            </ul>
+            <div className='flex items-center gap-4 md:gap-12 text-gray-400  text-sm'>
+              <Link href="/about" className='hover:text-white duration-300 cursor-pointer'>About us</Link>
+              <Link href="/feedback" className='hover:text-white duration-300 cursor-pointer'>Help & Feedback</Link>
+              <Link href="/Privacy-terms" className='hover:text-white duration-300 cursor-pointer'>Privacy & Terms</Link>
+            </div>
             <p className='text-gray-400 tracking-wide text-center md:text-left'>
              &#169; copyright {new Date().getFullYear()} ClickDate. All rights are reserved.
             </p>
